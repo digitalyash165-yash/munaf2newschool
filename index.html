@@ -25,7 +25,7 @@ fbq('track','PageView');
 
 <noscript>
 <img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=250880006690555&ev=PageView&noscript=1"/>
+src="https://www.facebook.com/tr?id=250880006690555&ev=PageView&noscript=1">
 </noscript>
 
 <style>
@@ -45,14 +45,143 @@ body {
 
 .container {
     width: 100%;
-    max-width: 440px;
-    margin: auto;
-    padding: 35px 18px 30px;
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 30px 18px;
 }
 
 .profile {
-    width: 125px;
-    height: 125px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     border: 4px solid #00f5f5;
-    object-fit
+    object-fit: cover;
+    box-shadow: 0 0 18px #00ffff;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #00eaff;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00dfff;
+}
+
+.features {
+    background: rgba(10, 29, 38, 0.85);
+    border-left: 4px solid #00eeee;
+    border-radius: 12px;
+    padding: 16px 8px;
+    margin: 11px 0;
+    font-size: 17px;
+}
+
+.telegram {
+    display: block;
+    width: 100%;
+    margin-top: 23px;
+    padding: 17px 8px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #00baf2, #0875ff);
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    box-shadow: 0 0 15px #00aaff;
+}
+
+.disclaimer {
+    margin-top: 40px;
+    color: #bdcdd2;
+    font-size: 11px;
+    line-height: 19px;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.footer a {
+    color: #00eaff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .container {
+        max-width: 100%;
+        padding: 25px 16px;
+    }
+
+    .profile {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .features {
+        font-size: 16px;
+        padding: 15px 5px;
+    }
+
+    .telegram {
+        font-size: 18px;
+        padding: 16px 5px;
+    }
+}
+
+/* LAPTOP */
+@media (min-width: 768px) {
+    .container {
+        max-width: 430px;
+        padding-top: 35px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- PHOTO CHANGE HERE -->
+    <img src="photo.jpg" class="profile" alt="Profile">
+
+    <h1>TRADE WITH MUNAAF</h1>
+
+    <div class="features">✔ Expert Analysis</div>
+
+    <div class="features">✔ High Accuracy Tips</div>
+
+    <div class="features">✔ Trusted by 55,000+ Members</div>
+
+    <div class="features">✔ Start Earning with Expert Tips</div>
+
+    <!-- TELEGRAM LINK -->
+    <a href="https://t.me/+zNhJWFqb_KhjYTg1"
+       class="telegram"
+       target="_blank"
+       rel="noopener"
+       onclick="fbq('track','Lead');">
+       ➤ Join Telegram Channel ➤
+    </a>
+
+    <div class="disclaimer">
+        Disclaimer: This channel is strictly for educational
+        and informational purposes only.
+    </div>
+
+    <div class="footer">
+        This ads managed by
+        <a href="https://t.me/+60VgI7emtM83ZGY9">YASH</a>
+    </div>
+
+</div>
+
+</body>
+</html>
